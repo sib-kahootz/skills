@@ -1,4 +1,0 @@
-interface:
-  display_name: "Manual Test Cases"
-  short_description: "Create tester-ready manual QA checklists from branches, diffs, PRs, or tickets."
-  default_prompt: "Use $manual-test-cases to inspect the current branch, diff, PR, or ticket and produce tester-ready manual test cases with setup assumptions, expected results, context gaps, coverage rationale, and an optional confirmed PR comment when a matching pull request exists."

@@ -1,9 +1,9 @@
 ---
-name: manual-test-cases
-description: Create tester-ready manual test cases, QA checklists, and acceptance test plans for code changes, local branches, diffs, pull requests, tickets, releases, or feature work. Use when Codex should inspect implementation evidence, optionally enrich it with GitHub or Jira context, identify behavior and risk coverage, produce markdown with step-by-step checkbox instructions, setup assumptions, expected results, context gaps, and coverage rationale, and offer to add the generated cases as a pull request comment when a PR exists for the branch.
+name: test-cases
+description: Create tester-ready test cases, manual QA checklists, and acceptance test plans for code changes, local branches, diffs, pull requests, tickets, releases, or feature work. Use when Codex should inspect implementation evidence, optionally enrich it with GitHub or Jira context, identify behavior and risk coverage, produce markdown with step-by-step checkbox instructions, setup assumptions, expected results, context gaps, coverage rationale, and offer to add the generated cases as a pull request comment when a PR exists for the branch.
 ---
 
-# Manual Test Cases
+# Test Cases
 
 Create practical manual test plans a human tester can execute without reading the code. Base the plan on implementation evidence first, then enrich with ticket, PR, or user context.
 
@@ -119,7 +119,7 @@ Do not let agents produce overlapping generic cases. Parent agent owns deduplica
 Use this structure unless the user asks for another format:
 
 ```markdown
-# Manual Test Cases
+# Test Cases
 
 ## Scope
 
