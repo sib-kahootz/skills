@@ -20,7 +20,7 @@ Assume `/opsx:apply` has already completed unless local evidence shows otherwise
 
 2. Determine the requirement delta.
    - Separate confirmed requirements from questions, preferences, defects, and implementation tasks.
-   - Use `$grill-me` when available if the requirement is ambiguous, high-impact, or has unresolved decision branches.
+   - Use `$grilling` when available if the requirement is ambiguous, high-impact, or has unresolved decision branches.
    - Ask only for decisions that cannot be resolved from repository evidence.
 
 3. Update OpenSpec artifacts.
