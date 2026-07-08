@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Branch"
+  short_description: "Create Jira-named Git branches"
+  default_prompt: "Use $new-branch to create a Git branch from this Jira ticket URL."
