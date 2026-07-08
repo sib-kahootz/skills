@@ -1,6 +1,7 @@
 ---
 name: comment-hygiene
 description: Create, rewrite, audit, or remove source code comments and documentation comments so they explain useful design knowledge rather than restating code. Use when the user asks to add comments, improve comments, clean up comments, review comments, improve comment hygiene, remove noisy comments, update stale comments, write docstrings, rewrite API docs, or edit inline, block, module, class, function, method, interface, or public contract comments in files, diffs, pull requests, or selected code.
+disable-model-invocation: true
 ---
 
 # Comment Hygiene

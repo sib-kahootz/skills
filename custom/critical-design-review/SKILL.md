@@ -1,6 +1,7 @@
 ---
 name: critical-design-review
 description: Argue the strongest useful case against a proposed design, architecture decision, product change, code change, local branch, pull request, migration, integration, rollout, or implementation plan. Use when the user wants an adversarial review, devil's advocate pass, pre-mortem, objection memo, design challenge, risk teardown, simplification critique, reliability critique, or a reviewer whose job is to find why the change should not proceed as proposed.
+disable-model-invocation: true
 ---
 
 # Critical Design Review
