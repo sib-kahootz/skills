@@ -1,4 +1,4 @@
 interface:
   display_name: "Test Cases"
-  short_description: "Create tester-ready spreadsheet QA cases from branches, diffs, PRs, or tickets."
-  default_prompt: "Use $test-cases to inspect the current branch, diff, PR, or ticket and produce tester-ready spreadsheet test cases with setup assumptions, expected results, context gaps, coverage rationale, and an optional confirmed PR comment when a matching pull request exists."
+  short_description: "Create tester-ready QA cases from specs, diffs, PRs, or tickets."
+  default_prompt: "Use $test-cases to inspect the current branch, diff, PR, ticket, or OpenSpec change and produce tester-ready spreadsheet test cases with setup assumptions, expected results, context gaps, coverage rationale, and an optional confirmed PR comment when a matching pull request exists."

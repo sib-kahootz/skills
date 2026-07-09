@@ -1,6 +1,6 @@
 ---
 name: test-cases
-description: Create tester-ready spreadsheet test cases, manual QA checklists, and acceptance test plans for code changes, local branches, diffs, pull requests, tickets, releases, or feature work. Use when Codex should inspect implementation evidence, optionally enrich it with GitHub or Jira context, identify behavior and risk coverage, produce test cases with step-by-step instructions, expected results, setup assumptions, context gaps, coverage rationale, and offer to add the generated cases as a pull request comment when a PR exists for the branch.
+description: Create tester-ready spreadsheet test cases, manual QA checklists, and acceptance test plans for code changes, local branches, diffs, pull requests, tickets, releases, OpenSpec changes, or feature work. Use when Codex should inspect implementation evidence, use OpenSpec artifacts when an OpenSpec change is in scope, optionally enrich with GitHub or Jira context, identify behavior and risk coverage, produce test cases with step-by-step instructions, expected results, setup assumptions, context gaps, coverage rationale, and offer to add the generated cases as a pull request comment when a PR exists for the branch.
 ---
 
 # Test Cases
@@ -20,7 +20,18 @@ Accept any of:
 - supplied diff
 - PR URL or number
 - Jira ticket or acceptance criteria
+- OpenSpec change name, `/opsx:*` context, or nearby `openspec/` store
 - user-described feature or release
+
+When OpenSpec is in scope, resolve it before gathering other context:
+
+- Treat OpenSpec as in scope when the user names an OpenSpec change, references `/opsx:*`, asks about work implemented from OpenSpec, the branch/change context clearly matches an active OpenSpec change, or the repository has a nearby `openspec/` root relevant to the work.
+- If the user names a store or the work lives in a standalone OpenSpec store, run `openspec store list --json` and pass `--store <id>` to OpenSpec commands that read specs and changes.
+- If the change name is explicit, run `openspec status --change "<name>" --json`.
+- If the change name is not explicit, run `openspec list --json` and infer only when there is one clear matching active change. Ask when multiple plausible changes exist.
+- Read the proposal, design, specs, tasks, and any other artifact paths reported by `openspec status --change "<name>" --json`. When status does not include a resolved path for an artifact, run `openspec instructions <artifact-id> --change "<name>" --json` and read the `resolvedOutputPath`. Prefer resolved artifact paths from the status or instruction output over guessed paths.
+- Use OpenSpec artifacts as primary requirements evidence. Reconcile GitHub, Jira, repository docs, and implementation diffs against those artifacts instead of replacing them.
+- If OpenSpec artifacts are missing, incomplete, or conflict with the implementation, list that under Context Gaps or Reconcile Conflicts and still produce the best executable test plan from available evidence.
 
 For local branch work, inspect enough Git state to understand the comparison:
 
@@ -42,10 +53,13 @@ Include staged, unstaged, and untracked files when the user asks for current cha
 
 Use available context, but treat it as evidence to reconcile:
 
+- OpenSpec: proposal, design, delta specs, tasks, artifact status, and acceptance criteria implied by requirements scenarios
 - GitHub: PR title/body, labels, linked issues, review comments, changed files
 - Jira: summary, description, acceptance criteria, comments, linked bugs, status, labels/components/fix versions
 - Repository docs: setup, QA, permissions, feature flags, environments, test data, release notes
 - Nearby code/tests: behavior, roles, state transitions, contracts, failure handling
+
+When OpenSpec is in scope, cite the OpenSpec change name and artifacts used in the Scope section.
 
 If GitHub or Jira is unavailable, continue from local evidence. Mention missing context only when it creates a real blind spot.
 
@@ -74,6 +88,9 @@ Do not pad with generic tests that do not follow from the change.
 Call out disagreements instead of smoothing them over:
 
 - Ticket requires behavior with no implementation evidence.
+- OpenSpec requirements, tasks, or specs require behavior with no implementation evidence.
+- Implementation changes behavior not described by the OpenSpec artifacts.
+- OpenSpec artifacts disagree with Jira, GitHub, or repository docs.
 - Diff changes behavior not described in ticket or PR.
 - PR text claims tests or deployment steps that the repo evidence does not support.
 - Acceptance criteria are too vague to test directly.
