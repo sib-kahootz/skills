@@ -17,6 +17,12 @@ Estimate story points by reading the work item, comparing scope against risk and
 4. When a relevant local checkout is available, do a quick code-path scan before estimating and cite the likely files or modules that drive the estimate.
 5. If the input is too thin to estimate responsibly, ask for the smallest missing detail that would change the estimate, such as acceptance criteria, affected system, integration points, or test expectations.
 
+## Jira Write-Back
+
+When the estimate is based on a Jira issue and Jira write access is available, include a short offer to apply the recommended story point value to the ticket and add the rationale as a Jira comment. Do not update Jira until the user explicitly confirms.
+
+After confirmation, update the story point field with the recommended value and add a concise comment that includes the estimate, confidence, main rationale, and any material uncertainty or split recommendation. If either write operation fails, report exactly what was and was not changed.
+
 ## Estimation Guide
 
 Read [references/estimation-guide.md](references/estimation-guide.md) after collecting the Jira or pasted story context. Use it for the estimation workflow, default scale, uncertainty checks, and response format.

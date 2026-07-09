@@ -65,6 +65,11 @@ Could move up if:
 
 Suggested split, if needed:
 - ...
+
+Jira update:
+- I can apply `N` story points to `ISSUE-123` and add this rationale as a comment. Confirm before I update Jira.
 ```
 
 Keep the answer short unless the user asks for detailed reasoning. When confidence is low, give the best provisional estimate and the one or two missing facts that matter most.
+
+Include the Jira update offer only when the estimate came from a Jira issue and Jira write access appears available. Omit it for pasted descriptions, unresolved Jira links, or read-only Jira access.
