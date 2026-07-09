@@ -1,13 +1,13 @@
 ---
 name: test-cases
-description: Create tester-ready test cases, manual QA checklists, and acceptance test plans for code changes, local branches, diffs, pull requests, tickets, releases, or feature work. Use when Codex should inspect implementation evidence, optionally enrich it with GitHub or Jira context, identify behavior and risk coverage, produce markdown with step-by-step checkbox instructions, setup assumptions, expected results, context gaps, coverage rationale, and offer to add the generated cases as a pull request comment when a PR exists for the branch.
+description: Create tester-ready spreadsheet test cases, manual QA checklists, and acceptance test plans for code changes, local branches, diffs, pull requests, tickets, releases, or feature work. Use when Codex should inspect implementation evidence, optionally enrich it with GitHub or Jira context, identify behavior and risk coverage, produce test cases with step-by-step instructions, expected results, setup assumptions, context gaps, coverage rationale, and offer to add the generated cases as a pull request comment when a PR exists for the branch.
 ---
 
 # Test Cases
 
 Create practical manual test plans a human tester can execute without reading the code. Base the plan on implementation evidence first, then enrich with ticket, PR, or user context.
 
-Default to returning markdown in chat. Create or edit a file only when the user asks for a file.
+Default to producing the generated test cases as a spreadsheet-compatible table. Create an `.xlsx` or `.csv` file when the user asks for a file; otherwise return a markdown table in chat using the same spreadsheet columns.
 
 ## Workflow
 
@@ -116,7 +116,7 @@ Do not let agents produce overlapping generic cases. Parent agent owns deduplica
 
 ## Output Contract
 
-Use this structure unless the user asks for another format:
+Use this structure unless the user asks for another format. Keep supporting context concise and make the spreadsheet table the primary deliverable:
 
 ```markdown
 # Test Cases
@@ -143,29 +143,27 @@ Use this structure unless the user asks for another format:
 
 ## Test Cases
 
-### 1. Descriptive test case title
-
-Purpose: Briefly explain the behavior or risk covered.
-
-Preconditions:
-- [ ] ...
-
-Steps:
-- [ ] Open ...
-- [ ] Sign in as ...
-- [ ] Perform ...
-- [ ] Verify ...
-
-Expected result:
-- [ ] ...
+| Test Case ID | Feature | Test Case Description | Test Steps | Expected Result | Status | Comments |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-001 | ... | ... | 1. ...<br>2. ...<br>3. ... | ... | Not Run | Preconditions: ...<br>Notes: ... |
 ```
 
 Add sections for deployment checks, rollback checks, or exploratory notes only when the change needs them.
 
+### Spreadsheet Column Rules
+
+- `Test Case ID`: Use stable sequential IDs such as `TC-001`, `TC-002`, and keep IDs unique across the output.
+- `Feature`: Name the feature, workflow, API, permission area, integration, or release concern under test.
+- `Test Case Description`: State the tester-readable scenario and risk covered in one concise sentence.
+- `Test Steps`: Use chronological numbered steps. Put preconditions or required test data in the first step or in `Comments`.
+- `Expected Result`: State observable outcomes and meaningful assertions.
+- `Status`: Default to `Not Run` unless the user supplies another status.
+- `Comments`: Include setup notes, assumptions, context gaps, required roles, feature flags, data IDs, environment needs, or exploratory notes.
+
 ## Test Case Quality Bar
 
 - Make every case executable by a tester who has not read the code.
-- Use chronological steps with one action or assertion per checkbox.
+- Use chronological steps with one action or assertion per numbered step.
 - Prefer observable behavior over implementation details.
 - Include expected results for each meaningful assertion.
 - Use real domain terms found in code, docs, ticket, or PR.
