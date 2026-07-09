@@ -2,27 +2,25 @@
 
 ## Visual Signature
 
-- Warm off-white paper background with subtle texture.
 - Hand-drawn infographic composition, polished rather than messy.
 - Large hand-lettered navy title at the top, with a smaller green or dark subtitle below.
-- Central circular subject area with a portrait, product, or key object.
-- Surrounding rounded rectangular cards connected with curved arrows.
+- A composition chosen to fit the provided information, such as a radial map, grid, flow, timeline, comparison, annotated scene, or sectioned poster.
+- Rounded rectangular cards, section panels, callouts, ribbons, arrows, or scene labels as needed.
 - Illustrated hats, badges, shields, light bulbs, charts, hearts, mountains, sticky notes, or other simple icons that reinforce the topic.
 - Bottom ribbon or footer strip for summary values, traits, or key takeaways.
 
-## Composition Pattern
+## Composition Patterns
 
-For a wide poster:
+Choose the layout from the information provided:
 
-1. Top title band.
-2. Central subject medallion.
-3. Four surrounding cards: upper left, upper right, lower left, lower right.
-4. Optional landscape or scene panel beneath the subject.
-5. Bottom ribbon with a short conclusion.
-6. Footer badges or small value tiles.
-7. Optional sticky note in a corner for a playful aside.
+- Use a radial map when one person, product, or idea has several roles or facets.
+- Use a grid when several items have similar weight.
+- Use a timeline when sequence or chronology matters.
+- Use a flow when the information describes a process or handoff.
+- Use a comparison layout when two or more options, teams, states, or concepts need contrast.
+- Use an annotated scene when place, environment, product surface, or context matters.
 
-For square or portrait images, reduce the number of cards and stack them vertically around the subject.
+For a wide poster, use a top title band and distribute sections across the canvas with generous spacing. For square or portrait images, reduce card count per row and stack sections vertically.
 
 ## Palette
 
@@ -50,4 +48,4 @@ For square or portrait images, reduce the number of cards and stack them vertica
 
 Use or adapt this style clause:
 
-`polished hand-drawn illustrated explainer poster on warm off-white textured paper, bold navy hand-lettered title, neat handwritten labels, central subject medallion, rounded cards connected by curved arrows, sketched icons, soft watercolor shading, limited muted accent colors, playful professional tone, highly legible text, no cramped paragraphs, no extra gibberish text`
+`polished hand-drawn illustrated explainer poster on warm off-white textured paper, bold navy hand-lettered title, neat handwritten labels, content-led layout chosen to fit the information, rounded cards and callouts connected by arrows where useful, sketched icons, soft watercolor shading, limited muted accent colors, playful professional tone, include all supplied information, highly legible text, no cramped paragraphs, no extra gibberish text`
