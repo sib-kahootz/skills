@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenSpec Evolve"
+  short_description: "Update OpenSpec after apply feedback"
+  default_prompt: "Use $openspec-evolve to capture post-apply changes and update the OpenSpec artifacts."
