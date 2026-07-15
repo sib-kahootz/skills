@@ -1,4 +1,0 @@
-interface:
-  display_name: "Log Interrogator"
-  short_description: "Search configured logs by terms and time windows"
-  default_prompt: "Use $log-interrogator to investigate recent log activity."
