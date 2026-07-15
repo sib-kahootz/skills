@@ -1,4 +1,0 @@
-interface:
-  display_name: "Repo Onboarding"
-  short_description: "Map a repository and produce a practical contributor onboarding brief."
-  default_prompt: "Use $repo-onboarding to inspect this repository, identify architecture, commands, conventions, risks, and first-change guidance, then synthesize a practical onboarding brief. Use optional parallel subagent evidence lanes only when repository size, scope, or risk justifies them."

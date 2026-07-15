@@ -1,4 +1,0 @@
-interface:
-  display_name: "Critical Design Review"
-  short_description: "Challenge designs for simpler safer paths"
-  default_prompt: "Use $critical-design-review to challenge a design, branch, PR, or plan for complexity, reliability, policy, and verification risks."
