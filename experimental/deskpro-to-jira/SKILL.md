@@ -1,6 +1,7 @@
 ---
 name: deskpro-to-jira
 description: Create Jira tasks from Deskpro ticket URLs. Use when Codex is given a Deskpro support ticket link and asked to inspect, summarize, convert, raise, log, or create a Jira issue from it, especially when the Jira site, project, issue fields, user confirmation, or missing support-ticket details are needed before creating the Jira ticket.
+disable-model-invocation: true
 ---
 
 # Deskpro to Jira

@@ -1,6 +1,7 @@
 ---
 name: new-branch
 description: Create a new Git branch from an updated base branch using a Jira ticket URL, defaulting the base to master. Use when the user asks to create, switch to, or prepare a branch named from a Jira issue key and summary, especially from Jira URLs such as https://.../browse/PROJ-123.
+disable-model-invocation: true
 ---
 
 # New Branch

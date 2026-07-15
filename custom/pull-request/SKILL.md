@@ -1,6 +1,7 @@
 ---
 name: pull-request
 description: Prepare, review, update, push, and create GitHub pull requests from local branch work. Use when the user asks to open a PR, create a pull request, update an existing PR, prepare a draft PR, publish current branch work, push a branch for review, write or refresh a PR title/body, add reviewer testing focus guidance, assign the PR, choose or apply PR labels, or check PR readiness before publishing. When a pull request already exists for the branch, review and update that PR instead of creating a duplicate. Default to draft PRs unless the user explicitly asks for ready-for-review.
+disable-model-invocation: true
 ---
 
 # Pull Request

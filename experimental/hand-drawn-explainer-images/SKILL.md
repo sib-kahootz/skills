@@ -2,6 +2,7 @@
 name: hand-drawn-explainer-images
 description: >-
   Create explainer images with a polished hand-drawn infographic style: large hand-lettered title, content-led layout, labeled cards or sections, arrows, icons, checklists, small doodles, and limited accent colors. Use when the user asks to generate, edit, or prompt for illustrated explainer images, visual summaries, personal/team role maps, product explainers, concept posters, capability maps, or infographic-style images inspired by a provided reference image. Prefer deterministic SVG/PDF/HTML output over raster AI generation when exact wording, dense tables, or full source-document coverage is required.
+disable-model-invocation: true
 ---
 
 # Hand-Drawn Explainer Images

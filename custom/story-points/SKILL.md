@@ -1,6 +1,7 @@
 ---
 name: story-points
 description: Estimate story points for sprint stories from a Jira ticket link first, falling back to a pasted story description when Jira is unavailable or no link is provided. Use when the user asks to size, estimate, point, score, or allocate story points to a Jira issue, backlog item, sprint story, bug, spike, or change request.
+disable-model-invocation: true
 ---
 
 # Estimate Story Points

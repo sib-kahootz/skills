@@ -1,6 +1,7 @@
 ---
 name: peer-review
 description: Review an existing GitHub pull request from a PR URL or ID using GitHub and Jira context. Use when the user asks for peer review, PR review, merge readiness review, label review, read-only connector-first PR review when a local checkout is unavailable, review comment drafting for an open PR, or optional multi-agent review for broad or high-risk PRs. Assess PR/Jira context, diff correctness, security/accessibility/contracts, tests/verification, deployment risk, labels, and final merge verdict.
+disable-model-invocation: true
 ---
 
 # Peer Review

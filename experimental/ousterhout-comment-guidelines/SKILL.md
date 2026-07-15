@@ -1,6 +1,7 @@
 ---
 name: ousterhout-comment-guidelines
 description: Review, add, rewrite, or remove source-code comments using John Ousterhout's interface-focused principles. Use when the user requests Ousterhout-style comments, wants documentation that captures abstractions and design decisions, or needs a comment review focused on what clients need to know rather than implementation detail.
+disable-model-invocation: true
 ---
 
 # Ousterhout Comment Guidelines

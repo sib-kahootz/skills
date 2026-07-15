@@ -1,6 +1,7 @@
 ---
 name: code-review
 description: Review a local branch before a pull request exists. Use when the user asks for a code review, branch review, pre-PR review, review of current changes, comparison against main/master/develop, readiness check before opening a PR, or PR-style findings for uncommitted, staged, committed, or named branch work. Inspect diffs, commit history, local project guidance, optional Jira context, likely PR labels, tests, security, accessibility, correctness, maintainability, and deployment risk.
+disable-model-invocation: true
 ---
 
 # Code Review

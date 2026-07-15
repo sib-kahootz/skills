@@ -1,6 +1,7 @@
 ---
 name: openspec-evolve
 description: Evolve OpenSpec requirements after an /opsx:apply has already completed. Use when testing, user feedback, code review, implementation discoveries, or acceptance review reveal additional changes that need to be captured in OpenSpec artifacts, verified, and mapped to next actions such as no implementation change or another /opsx:apply.
+disable-model-invocation: true
 ---
 
 # OpenSpec Evolve

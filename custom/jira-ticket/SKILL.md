@@ -1,6 +1,7 @@
 ---
 name: jira-ticket
 description: Create a single Jira ticket from user-provided requirements after drafting and confirming the exact ticket details with the user. Use when the user asks to turn requirements, notes, feature ideas, bugs, acceptance criteria, or implementation tasks into one Jira issue for any Jira project or backlog.
+disable-model-invocation: true
 ---
 
 # Jira Ticket

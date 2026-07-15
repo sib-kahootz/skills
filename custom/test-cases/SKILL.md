@@ -1,6 +1,7 @@
 ---
 name: test-cases
 description: Create tester-ready spreadsheet test cases, manual QA checklists, and acceptance test plans for code changes, local branches, diffs, pull requests, tickets, releases, OpenSpec changes, or feature work. Use when Codex should inspect implementation evidence, use OpenSpec artifacts when an OpenSpec change is in scope, optionally enrich with GitHub or Jira context, identify behavior and risk coverage, produce test cases with step-by-step instructions, expected results, setup assumptions, context gaps, coverage rationale, and offer to add the generated cases as a pull request comment when a PR exists for the branch.
+disable-model-invocation: true
 ---
 
 # Test Cases
