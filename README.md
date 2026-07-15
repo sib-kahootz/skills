@@ -1,11 +1,11 @@
-# AI Skills Repository
+# AI Skills
 
 Repository for storing, testing, and sharing AI skills.
 
 ## Structure
 
 ```text
-ai-skills/
+skills/
 +-- custom/         # Skills built from scratch
 +-- third-party/    # External or community skills
 +-- experimental/   # Prototypes, tests, and ideas
